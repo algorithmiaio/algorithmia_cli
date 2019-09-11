@@ -15,7 +15,7 @@ dependencies = [
 
 [[package]]
 name = "algo"
-version = "1.0.1"
+version = "1.0.2"
 dependencies = [
  "algorithmia 3.0.0-beta.2 (git+https://github.com/algorithmiaio/algorithmia-rust)",
  "chan 0.1.19 (registry+https://github.com/rust-lang/crates.io-index)",
