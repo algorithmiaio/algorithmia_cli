@@ -170,6 +170,14 @@ handle_command_line_args() {
     local _help=false
     local _disable_sudo=false
 
+    case "$(uname -s)" in
+        MINGW* | MSYS* | CYGWIN*)
+            echo "Sorry, but this script doesn't currently support Windows. You can find the Windows install instructions here: https://algorithmia.com/developers/clients/cli#installing-the-algorithmia-cli"
+            return
+            ;;
+        *)
+    esac
+
     local _arg
     for _arg in "$@"; do
         case "${_arg%%=*}" in
